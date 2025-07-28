@@ -13,7 +13,23 @@ const Home = () => {
         <Hero />
         <AdvantagesList />
         <Sevices />
-        <Video />
+        {/* <Video /> */}
+        <Video
+          title='Трейлер фільму'
+          width='560'
+          height='315'
+          src='https://www.youtube.com/embed/LmDsOGdm06Y?si=b8ShvMmWC0pKz0vK'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+          referrerPolicy={'strict-origin-when-cross-origin'}
+        />
+        <Video
+          title='Трейлер фільму'
+          width='560'
+          height='315'
+          src='https://www.youtube.com/embed/3zj7_LM6hKY?si=mePGdkXp4sFpNOd_'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+          referrerPolicy={'strict-origin-when-cross-origin'}
+        />
       </main>
     </>
   );

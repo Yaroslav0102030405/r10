@@ -1,48 +1,55 @@
-// Типізація пропсів компонента Video
+// працюющий варіант
+// const Video = () => {
+//   return (
+//     <>
+//       <iframe
+//         width='560'
+//         height='315'
+//         src='https://www.youtube.com/embed/LmDsOGdm06Y?si=b8ShvMmWC0pKz0vK'
+//         title='YouTube video player'
+//         // frameborder='0'
+//         allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+//         referrerPolicy='strict-origin-when-cross-origin'
+//         allowFullScreen
+//       ></iframe>
+//     </>
+//   );
+// };
+
+// export default Video;
+
+// новий варіант
+// --- Типізація пропсів для компонента Video ---
 interface VideoProps {
-  width?: string | number;
-  height?: string | number;
-  title?: string;
-  autoPlay?: boolean;
-  controls?: boolean;
-  loop?: boolean;
-  className?: string;
+  width?: string | number; // Необов'язкова ширина відео
+  height?: string | number; // Необов'язкова висота відео
+  title?: string; // Необов'язковий заголовок iframe
+  referrerPolicy?: HTMLAttributeReferrerPolicy | undefined;
+  src: string;
+  allow: string;
+  //   allowFullScreen?: boolean;
 }
 
-const Video = ({
-  width = 560,
-  height = 315,
-  title = 'YouTube video player',
-  autoPlay = false,
-  controls = true,
-  loop = false,
-  className = '',
-}: VideoProps) => {
-  // *** Використовуємо ID відео з наданого iframe коду ***
-  const hardcodedVideoId = 'a_04N0N0K0M';
-
-  // Формуємо URL для вбудовування відео
-  // Базовий URL 'https://www.youtube.com/embed/' є коректним.
-  const videoSrc = `https://www.youtube.com/embed/{hardcodedVideoId}?enablejsapi=1${
-    autoPlay ? '&autoplay=1' : ''
-  }${controls ? '' : '&controls=0'}${
-    loop ? `&loop=1&playlist=${hardcodedVideoId}` : ''
-  }`;
-
+// Компонент Video, який тепер приймає пропси типу VideoProps
+const Video: React.FC<VideoProps> = ({
+  // Деструктуруємо пропси, встановлюючи значення за замовчуванням
+  width,
+  height,
+  title,
+  allow,
+  src,
+  referrerPolicy,
+}) => {
   return (
     <>
-      <div className={`youtube-embed-container ${className}`}>
-        <iframe
-          width={width}
-          height={height}
-          src={videoSrc}
-          title={title}
-          frameBorder='0'
-          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-          referrerPolicy='strict-origin-when-cross-origin'
-          allowFullScreen
-        ></iframe>
-      </div>
+      <iframe
+        width={width}
+        height={height}
+        src={src} // Використовуємо динамічно сформований URL
+        title={title}
+        allow={allow}
+        referrerPolicy={referrerPolicy} // Передаємо значення з пропсів
+      ></iframe>
     </>
   );
 };
