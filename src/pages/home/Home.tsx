@@ -2,6 +2,7 @@ import AdvantagesList from '../../components/advantages-list/Advantages-list';
 import Header from '../../components/header/Header';
 import Hero from '../../components/hero/Hero';
 import Sevices from '../../components/services/Services';
+import Video from '../../components/video/Video';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <Hero />
         <AdvantagesList />
         <Sevices />
+        <Video />
       </main>
     </>
   );
