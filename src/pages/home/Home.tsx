@@ -6,6 +6,7 @@ import Sevices from '../../components/services/Services';
 const Home = () => {
   return (
     <>
+      <p>Перший</p>
       <Header />
       <main>
         <Hero />
