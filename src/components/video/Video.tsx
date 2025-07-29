@@ -18,6 +18,7 @@
 
 // export default Video;
 
+import styles from './video.module.scss';
 // новий варіант
 // --- Типізація пропсів для компонента Video ---
 interface VideoProps {
@@ -42,7 +43,7 @@ const Video: React.FC<VideoProps> = ({
 }) => {
   return (
     <>
-      <h2>&copy; Мнемокод</h2>
+      <h2 className={styles.active}>&copy; Мнемокод</h2>
       <iframe
         width={width}
         height={height}

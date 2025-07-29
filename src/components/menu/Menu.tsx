@@ -1,7 +1,9 @@
+import styles from './menu.module.scss';
+
 const Menu = () => {
   return (
     <>
-      <ul>
+      <ul className={styles.active}>
         <li>
           <a href='#'>Студия</a>
         </li>
