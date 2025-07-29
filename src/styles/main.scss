@@ -3,18 +3,8 @@
 @use './mixins' as *;
 @use './base' as *;
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  background-color: #242424;
-}
-
 .card {
   padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
 
 ul {
@@ -52,8 +42,10 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  max-width: 1280px;
+  margin: 0 auto;
   color: #ffffff;
+  background-color: #213547;
   /* display: flex;
   place-items: center;
   min-width: 320px;
@@ -127,4 +119,46 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image:
+    linear-gradient(#2f303a66 40%), url('../components/hero/Img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.list-item {
+  width: 300px;
+}
+
+.list-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  // background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+
+.list-item:nth-child(1)::before {
+  background-image: url('../components/advantages-list/antenna\ 1.png');
+}
+
+.list-item:nth-child(2)::before {
+  background-image: url('../components/advantages-list/clock\ 1.png');
+}
+
+.list-item:nth-child(3)::before {
+  background-image: url('../components/advantages-list/diagram\ 1.png');
+}
+
+.list-item:nth-child(4)::before {
+  background-image: url('../components/advantages-list/astronaut\ 1.png');
 }
