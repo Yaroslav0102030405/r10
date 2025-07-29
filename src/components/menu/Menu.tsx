@@ -4,13 +4,13 @@ const Menu = () => {
   return (
     <>
       <ul className={styles.active}>
-        <li>
+        <li className={styles.item}>
           <a href='#'>Студия</a>
         </li>
-        <li>
+        <li className={styles.item}>
           <a href='#'>Портфолио</a>
         </li>
-        <li>
+        <li className={styles.item}>
           <a href='#'>Контакты</a>
         </li>
       </ul>

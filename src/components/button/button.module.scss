@@ -1,0 +1,28 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  width: 100%;
+  max-width: 300px;
+  transition:
+    background-color 0.5s ease-in-out,
+    transform 0.3s ease;
+  &:hover {
+    background-color: darken(
+      #ccccff,
+      10%
+    ); // Злегка затемнюємо фон при наведенні
+
+    // Анімація для SVG при наведенні
+    svg {
+      transform: translateY(-5px); // Піднімаємо стрілку вгору на 5px
+      // transform: rotate(-90deg); // Якщо стрілка спочатку горизонтальна, а ви хочете, щоб вона вказувала вгору
+    }
+  }
+
+  // Опціонально: стан при активному натисканні (active)
+  &:active {
+    transform: scale(0.98); // Злегка зменшуємо кнопку при натисканні
+  }
+}
