@@ -42,6 +42,7 @@ const Video: React.FC<VideoProps> = ({
 }) => {
   return (
     <>
+      <h2>&copy; Мнемокод</h2>
       <iframe
         width={width}
         height={height}
