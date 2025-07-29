@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <nav>
+        <nav className='flex'>
           <Logo />
           <Menu />
           <Contacts />

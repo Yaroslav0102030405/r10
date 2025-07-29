@@ -3,7 +3,7 @@ import styles from './menu.module.scss';
 const Menu = () => {
   return (
     <>
-      <ul className={styles.active}>
+      <ul className={`${styles.active} ${styles.flex}`}>
         <li className={styles.item}>
           <a href='#'>Студия</a>
         </li>

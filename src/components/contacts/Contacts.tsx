@@ -4,7 +4,7 @@ import IconTell from '../../assets/icons/tell.svg?no-inline';
 const Contacts = () => {
   return (
     <>
-      <ul>
+      <ul className='flex'>
         <li>
           <a href='mailto:info@devstudio.com'>
             <svg width='14' height='10'>

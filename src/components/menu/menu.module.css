@@ -5,4 +5,9 @@
 .item:nth-child(2n) {
   color: red;
   font-size: 30px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=menu.module.css.map */

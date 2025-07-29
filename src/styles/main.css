@@ -113,4 +113,23 @@ button {
 button:hover,
 button:focus {
   background-color: #fed5ae;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  display: grid;
+  place-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */

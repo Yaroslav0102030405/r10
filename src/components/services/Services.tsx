@@ -17,7 +17,7 @@ const serviceImages: ServiceImage[] = [
 const Sevices = () => {
   return (
     <>
-      <ul>
+      <ul className='flex'>
         {serviceImages.map((image: ServiceImage) => (
           <li key={image.id}>
             <img width='370' src={image.src} alt={image.alt} />

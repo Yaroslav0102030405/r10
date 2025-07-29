@@ -1,7 +1,7 @@
 const AdvantagesList = () => {
   return (
     <>
-      <ul>
+      <ul className='flex'>
         <li>
           <h3>Внимание к деталям</h3>
           <p>
