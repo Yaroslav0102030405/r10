@@ -20,7 +20,12 @@ const Sevices = () => {
       <ul className='flex'>
         {serviceImages.map((image: ServiceImage) => (
           <li key={image.id}>
-            <img width='370' src={image.src} alt={image.alt} />
+            <div className='thumb'>
+              <img width='370' src={image.src} alt={image.alt} />
+              <div className='th-2'>
+                <p>lfddddddddddddddddddddddddddd</p>
+              </div>
+            </div>
           </li>
         ))}
       </ul>

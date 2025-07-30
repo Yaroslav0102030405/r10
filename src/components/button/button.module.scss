@@ -9,16 +9,7 @@
     background-color 0.5s ease-in-out,
     transform 0.3s ease;
   &:hover {
-    background-color: darken(
-      #ccccff,
-      10%
-    ); // Злегка затемнюємо фон при наведенні
-
-    // Анімація для SVG при наведенні
-    svg {
-      transform: translateY(-5px); // Піднімаємо стрілку вгору на 5px
-      // transform: rotate(-90deg); // Якщо стрілка спочатку горизонтальна, а ви хочете, щоб вона вказувала вгору
-    }
+    background-color: #e4ffcc;
   }
 
   // Опціонально: стан при активному натисканні (active)
