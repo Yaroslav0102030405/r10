@@ -1,6 +1,7 @@
 import AdvantagesList from '../../components/advantages-list/Advantages-list';
 import Header from '../../components/header/Header';
 import Hero from '../../components/hero/Hero';
+import InputFile from '../../components/inputFile/input-file';
 import Sevices from '../../components/services/Services';
 import Video from '../../components/video/Video';
 
@@ -30,6 +31,7 @@ const Home = () => {
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
           referrerPolicy={'strict-origin-when-cross-origin'}
         />
+        <InputFile />
       </main>
     </>
   );
