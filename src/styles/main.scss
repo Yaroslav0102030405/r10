@@ -121,7 +121,6 @@ img {
   height: auto;
 }
 
-
 .overlay {
   max-width: 1600px;
   height: 480px;
@@ -162,7 +161,8 @@ img {
 
 .list-item:nth-child(4)::before {
   background-image: url('../components/advantages-list/astronaut\ 1.png');
-=======
+}
+
 .thumb {
   position: relative;
   overflow: hidden;
