@@ -5,7 +5,7 @@ import Contacts from '../contacts/Contacts';
 const Header = () => {
   return (
     <>
-      <header>
+      <header className='header'>
         <nav className='flex'>
           <Logo />
           <Menu />
